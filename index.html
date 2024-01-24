@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #282c34;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .tool-container {
+            text-align: center;
+            background-color: #383c48;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .tool {
+            background-color: #4fa3d1;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .tool:hover {
+            background-color: #61dafb;
+        }
+
+        .group-link {
+            margin-top: 30px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tool-container">
+        <h2>🧰 Tools of the Shadows 🧙‍♂️</h2>
+        <div class="tool" onclick="share('DarkScript')">Dark Script</div>
+        <div class="tool" onclick="share('HexInjector')">Hex Injector</div>
+        <div class="tool" onclick="share('ShadowCompiler')">Shadow Compiler</div>
+        <div class="tool" onclick="share('CursedDebugger')">Cursed Debugger</div>
+
+        <div class="group-link">
+            Join the DarkWebExposer WhatsApp Group: <a href="https://chat.whatsapp.com/FVrr7g1trNp0iNIQcp4K7P" target="_blank">DarkWebExposer</a>
+        </div>
+    </div>
+
+    <script>
+        function share(toolName) {
+            alert(`Behold, mortal! A tool named ${toolName} has been unleashed upon the world.`);
+        }
+    </script>
+</body>
+</html>
